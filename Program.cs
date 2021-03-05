@@ -7,8 +7,7 @@ namespace words
     class Program
     {
         static void Main(string[] args)
-        {
-           
+        {           
             Dictionary<string, List<string>> synonims = new Dictionary<string, List<string>>();
 
             int countWords = int.Parse(Console.ReadLine());
@@ -29,13 +28,10 @@ namespace words
                 }
             }
 
-            
-
             foreach (var item in synonims)
             {
                 Console.WriteLine($"{item.Key} - {string.Join(", ", item.Value)}");
-            }
-           
+            }           
         }
     }
 }
